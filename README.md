@@ -2,7 +2,7 @@
 A dynamic website book borrowing application built with NodeJS, ExpressJS, and pug
 
 # Note
-This project is not completed and will probably not be continued as the creator depressed from bugs he made (JK LOL)
+This project is not completed and probably will not be continued as the creator depressed from bugs he made (JK LOL)
 
 # Some mistakes and bugs
 - Spliting books.js and borrowed.js : some method on borrowed.js needs resources from books.js and vice versa, creating a circular depedency
