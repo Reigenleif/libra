@@ -1,0 +1,21 @@
+extends layout 
+
+block stylesheet 
+    link(rel="stylesheet" href="css/login.css")
+
+
+block content
+    .form-wrapper 
+        .box-container 
+            form#login-form
+                .input-container 
+                    label Username
+                    input#username(type="text")
+                .input-container 
+                    label Password 
+                    input#password(type="password")
+                #err-block
+                button.btn#submit(type="submit") LOGIN
+
+block script 
+    script(src="js/login.js" type="module")

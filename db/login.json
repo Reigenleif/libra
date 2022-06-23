@@ -1,0 +1,17 @@
+[
+    {
+        "id": "achemy",
+        "name": "Akemi Tanaka",
+        "password": "gojosatoru123"
+    },
+    {
+        "id": "kirito",
+        "name": "Kirigaya Kazuto",
+        "password": "asuna"
+    },
+    {
+        "id": "KARIN",
+        "name": "Karin Uzumaki",
+        "password": "sasukekun"
+    }
+]

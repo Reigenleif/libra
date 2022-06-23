@@ -1,0 +1,32 @@
+extends layout 
+block stylesheet 
+    link(rel="stylesheet" href="/css/books.css")
+    
+block content 
+    .togglers-container 
+        button.btn-toggle#btn-toggle Show Borrowed Books
+    table.booktable
+        thead 
+            tr
+                th.f ISBN13
+                th.a Author 
+                th.b Title 
+                th.c Release Year
+                th.d Stock
+                th.e Borrow 
+        tbody#book-list 
+            each book in bookdata 
+                - const {id,author,title,relyr,remain,borrowed} = book
+                tr(class=`book-row ${borrowed && "borrowed"}` id=`row-${id}`)
+                    td #{id}
+                    td #{author}
+                    td #{title}
+                    td #{relyr}
+                    td #{remain}
+                    td 
+                        button(id=`btn-${id}` class=`btn-borrow`) Borrow
+            
+
+block script 
+    #none(style="display:none") #{borr}
+    script(src="/js/books.js" type="module")

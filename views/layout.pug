@@ -1,0 +1,15 @@
+html(lang="en")
+    head
+        link(rel="stylesheet" href="/css/main.css")
+        block stylesheet
+    
+    body 
+        .navbar
+            .logo libra. 
+            if !!uname
+                .hello #{`Hi, ${uname}`}
+                .controls
+                    button#logout Logout
+        block content
+        script(src='/js/main.js' type='module')
+        block script

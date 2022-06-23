@@ -1,0 +1,91 @@
+.booktable {
+    width: 100vw;
+    border-collapse: collapse;
+}
+
+.booktable thead {
+    font-style: bold;
+    height: 2em;
+    font-size: 1.2em;
+    border-bottom: 1px solid black; /* not working */
+}
+
+.booktable th.f {
+    width: 5%;
+}
+
+.booktable th.a {
+    width: 15%;
+}
+.booktable th.b {
+    width: 30%;
+}
+.booktable th.c {
+    width: 10%;
+}
+.booktable th.d {
+    width: 10%;
+}
+.booktable th.e {
+    width: 10%;
+}
+
+.booktable tr.odd {
+    background-color: #cccccc;
+}
+
+.booktable td {
+    text-align: center;
+    padding: 0.3em 0;
+}
+
+.booktable tr .btn-borrow{
+    width: 5em;
+    height: 2em;
+    background-color: #22ffff;
+    border: 0.3px solid black;
+}
+
+.booktable tr .btn-borrow:hover{
+    background-color: white;
+}
+
+.booktable tr .btn-borrow:active{
+    color:#22ffff;
+}
+
+.booktable tr.borrowed .btn-borrow {
+    background-color:  red;
+    color: white;
+}
+
+.booktable tr.borrowed .btn-borrow:hover {
+    background-color: #ffaaaa;
+}
+
+.booktable tr.borrowed .btn-borrow:active {
+    color: black
+}
+
+.togglers-container {
+    width: 15vw;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    margin: 0.2em 0 0.2em 83vw  
+}
+
+.togglers-container button {
+    background-color: #7fffd4;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.togglers-container button:hover {
+    background-color: white;
+}
+
+.togglers-container button:active {
+    color: #7fffd4
+}
